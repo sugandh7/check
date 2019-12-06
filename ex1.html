@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Nikhilpractice1</title>
+
+    <style>
+        .animate1 {
+            width: 100%;
+            position: absolute;
+            background-color: #1033E5
+        }
+        
+        .animate1 img {
+            width: 140px;
+            height: 120px;
+            left: 0%;
+            padding-top: 30px;
+            position: relative;
+            animation-name: run;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes run {
+            from {
+                left: 0;
+            }
+            to {
+                left: 70%;
+            }
+        }
+        
+        .containerfooter {
+            background-color: #3F51B5;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto,
+        }
+        
+        .mn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly
+        }
+        
+        .imgonhover:hover {
+            opacity: 0.5;
+            transition-duration: 1s;
+        }
+        
+        .img1 {
+            border-radius: 50px;
+        }
+        
+        .searchbutton {
+            background-color: rgb(63, 81, 181);
+            padding: 0px;
+            margin: 0px;
+            color: white;
+            border: 0px;
+        }
+        
+        .navbar_color {
+            background-color: rgb(63, 81, 181);
+        }
+        
+        .navbar-light .navbar-brand {
+            color: rgba(255, 255, 255)
+        }
+        
+        .navbar-light .navbar-brand:focus,
+        .navbar-light .navbar-brand:hover {
+            color: rgba(255, 255, 255)
+        }
+        
+        .navbar-light .navbar-nav .nav-link {
+            color: rgba(255, 255, 255)
+        }
+        
+        .navbar-light .navbar-nav .nav-link:focus,
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: rgba(255, 255, 255)
+        }
+        
+        .navbar-light .navbar-nav .nav-link.disabled {
+            color: rgba(255, 255, 255)
+        }
+        
+        .navbar-light .navbar-nav .active>.nav-link,
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link.show,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: rgba(255, 255, 255);
+        }
+        
+        .navbar-light .navbar-toggler {
+            color: rgba(255, 255, 255);
+            border-color: rgba(255, 255, 255)
+        }
+        
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+        }
+        
+        .navbar-light .navbar-text {
+            color: rgba(255, 255, 255)
+        }
+        
+        .navbar-light .navbar-text a {
+            color: rgba(255, 255, 255)
+        }
+        
+        .navbar-light .navbar-text a:focus,
+        .navbar-light .navbar-text a:hover {
+            color: rgba(255, 255, 255)
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar_color">
+
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">features</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+
+
+            </ul>
+
+            <form>
+                <input class="searchbutton" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+
+    </nav>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container  img-fluid">
+        <div class="row ">
+            <div class="col-xm-12 col-sm-6  col-md-6  col-lg-6 col-xl-6 ">
+                <div class="imgonhover"><img class="img1" src="4.jpg" style="width: 100%; height: 100%;"></div>
+            </div>
+            <div class="col-xm-12 col-sm-6 col-md-6  col-lg-6 col-xl-6 ">
+                <div style="font-family: Verdana;">
+                    <h1>Some awesome heading</h1>
+                </div>
+
+                <hr>
+
+                <div style="font-family: Georgia;"></div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis pariatur quod ipsum atque quam dolorem voluptate officia sunt placeat consectetur alias fugit cum praesentium ratione sint mollitia, perferendis natus quaerat!
+                <br>
+                <br><button class="btn btn-primary" style="background-color: rgb(63, 81, 181);"> GET IT NOW!</button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <div class="mn">
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="1.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="2.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="3.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="containerfooter">
+        <div style="color: white;">
+            <div class="row">
+                <div style="margin-left: 60px;  ">
+                    <div class="col-xm-12 col-sm-6  col-md-6  col-lg-6 col-xl-6 ">
+                        <h3>FOOTER CONTENT</h3>
+                        <br> Here you can use rows and columns here to organize your footer content.
+                    </div>
+                </div>
+                <div class="col-xm-12 col-sm-3  col-md-3 col-lg-3 col-xl-3 ">
+                    <h6>LINKS</h6>
+                    <a href="url">Link1</a><br>
+                    <a href="url">Link2</a><br>
+                    <a href="url">Link3</a><br>
+                    <a href="url">Link4</a><br>
+                </div>
+                <div class="col-xm-12 col-sm-3  col-md-3  col-lg-3 col-xl-3 ">
+                    <h6>LINKS</h6>
+                    <a href="url">Link1</a><br>
+                    <a href="url">Link2</a><br>
+                    <a href="url">Link3</a><br>
+                    <a href="url">Link4</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #1033E5">
+        <div class="text-center">
+            <m style="color: grey;">© 2018 Copyright:</m>
+            <w style="color: white;"> MDBootstrap.com</w>
+
+        </div>
+    </div>
+
+    <div class="contanier">
+
+        <div class="animate1">
+            <img src="tenor2.gif" alt="nothing">
+        </div>
+    </div>
+
+</body>
+
+</html>
